@@ -74,7 +74,7 @@ function App() {
           <div className="flex flex-col md:flex-row items-center md:space-x-12"> 
             <div className="md:w-1/3 mb-10 md:mb-0"> 
               <img
-                src="Pooja.jpg"
+                src="/Pooja.jpg"
               
                 className="rounded-full shadow-lg border-4 border-indigo-300 w-72 h-72 object-cover mx-auto transform transition-transform duration-300 hover:scale-105" // Increased image size
                 onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/350x350/6366F1/FFFFFF?text=Placeholder"; }}
