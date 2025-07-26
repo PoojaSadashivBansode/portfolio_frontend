@@ -55,7 +55,7 @@ function App() {
             <SocialLink icon={<Linkedin className="w-10 h-10 text-gray-400 hover:text-indigo-600" />} href="https://www.linkedin.com/in/pooja-bansode-1a1392257" label="LinkedIn" />
             
             <a
-              href="http://localhost:8080/view-resume" 
+              href="https://portfoliobackend-production-8d9f.up.railway.app/view-resume" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-10 py-4 bg-indigo-600 text-white rounded-full shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all text-lg"
@@ -412,7 +412,7 @@ const ContactForm = () => {
     setStatus('loading');
 
     try {
-      const response = await fetch('http://localhost:8080/send-email', {
+      const response = await fetch('https://portfoliobackend-production-8d9f.up.railway.app/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
