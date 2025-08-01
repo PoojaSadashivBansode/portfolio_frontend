@@ -39,45 +39,47 @@ function App() {
           </div>
         </div>
       </nav>
-
+                                                     
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center bg-slate-900 text-white px-6 py-12">
+      <section id="home" className="relative min-h-screen flex items-center justify-center bg-gray-100 text-gray-800 px-6 py-20">
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-12 md:space-y-0 md:space-x-20">
-            {/* Left side: Profile Photo */}
+            {/* Profile Photo */}
             <div className="relative w-80 h-80 flex-shrink-0 animate-fade-in-down">
-              <div className="absolute inset-0 rounded-full bg-blue-500 blur-2xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full bg-indigo-500 blur-2xl opacity-20 animate-pulse"></div>
               <img
                 src="/Pooja.jpg"
                 alt="Pooja Bansode"
-                className="relative w-full h-full object-cover rounded-full shadow-lg border-4 border-blue-400 z-10 transform transition-transform duration-300 hover:scale-105"
-                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/320x320/1e293b/a5b4fc?text=Pooja"; }}
+                className="relative w-full h-full object-cover rounded-full shadow-lg border-4 border-indigo-400 z-10 transform transition-transform duration-300 hover:scale-105"
+                onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/320x320/1e293b/a5b4fc?text=Pooja"; }}
               />
             </div>
-            
-            {/* Right side: Content */}
+
+            {/* Text Content */}
             <div className="text-center md:text-left animate-fade-in-up md:mt-10">
-              <h2 className="text-xl md:text-2xl font-light mb-2 text-blue-400">Hello, I'm</h2>
+              <h2 className="text-xl md:text-2xl font-light mb-2 text-indigo-600"><b>Hello, I'm</b></h2>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4">Pooja Bansode</h1>
-              <h3 className="text-2xl md:text-3xl font-light text-gray-300 mb-6">And I'm a <span className="font-semibold text-blue-400">Computer Engineering Student</span></h3>
-              <p className="text-md md:text-lg text-gray-400 max-w-xl mb-8">
+              <h3 className="text-2xl md:text-3xl font-light text-gray-600 mb-6">
+                <span className="font-semibold text-indigo-600">Computer Engineering Student</span>
+              </h3>
+              <p className="text-md md:text-lg text-gray-700 max-w-xl mb-8">
                 I'm a passionate and motivated Computer Engineering student with a strong foundation in problem-solving and a keen interest in data analytics, web development, and machine learning.
               </p>
 
               <div className="flex justify-center md:justify-start space-x-6 mb-8">
-                <SocialLink icon={<Github className="w-8 h-8 text-white hover:text-blue-400" />} href="https://github.com/PoojaSadashivBansode" label="GitHub" />
-                <SocialLink icon={<Linkedin className="w-8 h-8 text-white hover:text-blue-400" />} href="https://www.linkedin.com/in/pooja-bansode-1a1392257" label="LinkedIn" />
+                <SocialLink icon={<Github className="w-8 h-8 text-gray-700 hover:text-indigo-600" />} href="https://github.com/PoojaSadashivBansode" label="GitHub" />
+                <SocialLink icon={<Linkedin className="w-8 h-8 text-gray-700 hover:text-indigo-600" />} href="https://www.linkedin.com/in/pooja-bansode-1a1392257" label="LinkedIn" />
               </div>
-              
+
               <div className="flex flex-wrap justify-center md:justify-start gap-4">
-                <a href="#contact" className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+                <a href="#contact" className="px-8 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition-colors">
                   Contact Me
                 </a>
                 <a
-                  href="https://portfoliobackend-production-8d9f.up.railway.app/view-resume" // Will be updated to Railway URL after deployment
+                  href="https://portfoliobackend-production-8d9f.up.railway.app/view-resume"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-8 py-3 border border-blue-600 text-blue-400 font-semibold rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors"
+                  className="flex items-center gap-2 px-8 py-3 border border-indigo-600 text-indigo-600 font-semibold rounded-full shadow-lg hover:bg-indigo-600 hover:text-white transition-colors"
                 >
                   <FileText className="w-6 h-6" />
                   View Resume
@@ -87,6 +89,7 @@ function App() {
           </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <section id="about" className="relative min-h-screen flex items-center justify-center bg-white text-gray-800 px-6 py-12">
@@ -122,7 +125,7 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-50 p-4">
+      <section id="skills" className="py-20 bg-gray-100 p-4">
         <div className="container mx-auto px-8 max-w-6xl"> 
           <br></br>
           <h2 className="text-5xl font-bold text-center text-indigo-700 mb-16 border-b-4 border-indigo-500 pb-3 inline-block rounded-md">Skills</h2> {/* Increased font size, padding, margin */}
@@ -158,7 +161,8 @@ function App() {
               githubLink="https://github.com/PoojaSadashivBansode/Sentiment_Analysis_Restaurant_Reviews"
               liveLink=""
             />
-            
+
+
             <ProjectCard
               title="E-Commerce Sales Analysis"
               description="Used Power BI to analyze sales data, track seasonal trends, and customer segments with interactive dashboards for business insights."
@@ -193,7 +197,7 @@ function App() {
       </section>
 
       {/* Certificates Section */}
-      <section id="certificates" className="py-20 bg-gray-50 p-4">
+      <section id="certificates" className="py-20 bg-gray-100 p-4">
         <div className="container mx-auto px-8 max-w-6xl">
           <br></br>
           <h2 className="text-5xl font-bold text-center text-indigo-700 mb-16 border-b-4 border-indigo-500 pb-3 inline-block rounded-md">Certificates</h2>
@@ -433,7 +437,7 @@ const ContactForm = () => {
     setStatus('loading');
 
     try {
-      const response = await fetch('https://portfoliobackend-production-8d9f.up.railway.app/send-email', {
+      const response = await fetch('http://localhost:8080/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
