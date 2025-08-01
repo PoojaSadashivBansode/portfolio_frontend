@@ -129,9 +129,9 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"> 
             <SkillCard title="Programming Languages" skills={['Java', 'Python', 'C++']} />
             <SkillCard title="Data & Analytics" skills={['Power BI', 'Data Science', 'Data Visualization']} />
-            <SkillCard title="Web Development" skills={['Frontend (HTML, CSS, JavaScript, React)', 'Backend (Java, Node.js, PHP)']} />
+            <SkillCard title="Web Development" skills={['Frontend (HTML, CSS, JavaScript, React)', 'Backend (Java, PHP, Node.js, Spring Boot, Hibernate)']} />
             <SkillCard title="Databases" skills={['MySQL', 'MongoDB']} />
-            <SkillCard title="Concepts" skills={['Data Structures', 'Algorithms']} />
+            <SkillCard title="Concepts" skills={['Data Structures', 'Algorithms', 'OOPs']} />
             <SkillCard title="Soft Skills" skills={['Problem Solving', 'Communication', 'Teamwork']} />
           </div>
         </div>
@@ -152,13 +152,13 @@ function App() {
             />
 
             <ProjectCard
-              title="Image Classification Using CNN"
-              description="Built a model using Convolutional Neural Networks (CNN) to classify images. Trained on labeled data using TensorFlow and evaluated performance using accuracy metrics."
-              technologies={['Python', 'TensorFlow', 'Machine Learning']}
-              githubLink="https://github.com/PoojaSadashivBansode/Image_Classification"
+              title="Sentiment Analysis of Restaurant Reviews"
+              description="Performed sentiment analysis using Natural Language Processing (NLP) techniques to classify restaurant reviews as positive or negative. Used text preprocessing, feature extraction, and trained models using Scikit-learn."
+              technologies={['Python', 'NLP', 'Scikit-learn']}
+              githubLink="https://github.com/PoojaSadashivBansode/Sentiment_Analysis_Restaurant_Reviews"
               liveLink=""
             />
-
+            
             <ProjectCard
               title="E-Commerce Sales Analysis"
               description="Used Power BI to analyze sales data, track seasonal trends, and customer segments with interactive dashboards for business insights."
