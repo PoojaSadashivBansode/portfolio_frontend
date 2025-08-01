@@ -41,28 +41,49 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center bg-gray-50 text-gray-800 px-6 py-12">
-        <div className="text-center bg-indigo-50 bg-opacity-90 px-12 py-16 rounded-2xl shadow-xl transform transition-transform duration-500 hover:scale-105 border border-indigo-200 max-w-4xl w-full">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-down text-indigo-700">
-            Hi, I'm Pooja Bansode
-          </h1>
-          <p className="text-2xl md:text-3xl font-light mb-10 animate-fade-in-up text-gray-700">
-            <b>A Computer Engineering Student</b>
-          </p>
-          
-          <div className="flex justify-center items-center flex-wrap gap-6 animate-fade-in">
-            <SocialLink icon={<Github className="w-10 h-10 text-gray-400 hover:text-indigo-600" />} href="https://github.com/PoojaSadashivBansode" label="GitHub" />
-            <SocialLink icon={<Linkedin className="w-10 h-10 text-gray-400 hover:text-indigo-600" />} href="https://www.linkedin.com/in/pooja-bansode-1a1392257" label="LinkedIn" />
+      <section id="home" className="relative min-h-screen flex items-center justify-center bg-slate-900 text-white px-6 py-12">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-col md:flex-row items-center md:items-start space-y-12 md:space-y-0 md:space-x-20">
+            {/* Left side: Profile Photo */}
+            <div className="relative w-80 h-80 flex-shrink-0 animate-fade-in-down">
+              <div className="absolute inset-0 rounded-full bg-blue-500 blur-2xl opacity-20 animate-pulse"></div>
+              <img
+                src="/Pooja.jpg"
+                alt="Pooja Bansode"
+                className="relative w-full h-full object-cover rounded-full shadow-lg border-4 border-blue-400 z-10 transform transition-transform duration-300 hover:scale-105"
+                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/320x320/1e293b/a5b4fc?text=Pooja"; }}
+              />
+            </div>
             
-            <a
-              href="https://portfoliobackend-production-8d9f.up.railway.app/view-resume" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 px-10 py-4 bg-indigo-600 text-white rounded-full shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all text-lg"
-            >
-              <FileText className="w-7 h-7" />
-              Resume
-            </a>
+            {/* Right side: Content */}
+            <div className="text-center md:text-left animate-fade-in-up md:mt-10">
+              <h2 className="text-xl md:text-2xl font-light mb-2 text-blue-400">Hello, I'm</h2>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4">Pooja Bansode</h1>
+              <h3 className="text-2xl md:text-3xl font-light text-gray-300 mb-6">And I'm a <span className="font-semibold text-blue-400">Computer Engineering Student</span></h3>
+              <p className="text-md md:text-lg text-gray-400 max-w-xl mb-8">
+                I'm a passionate and motivated Computer Engineering student with a strong foundation in problem-solving and a keen interest in data analytics, web development, and machine learning.
+              </p>
+
+              <div className="flex justify-center md:justify-start space-x-6 mb-8">
+                <SocialLink icon={<Github className="w-8 h-8 text-white hover:text-blue-400" />} href="https://github.com/PoojaSadashivBansode" label="GitHub" />
+                <SocialLink icon={<Linkedin className="w-8 h-8 text-white hover:text-blue-400" />} href="https://www.linkedin.com/in/pooja-bansode-1a1392257" label="LinkedIn" />
+              </div>
+              
+              <div className="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="#contact" className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+                  Contact Me
+                </a>
+                <a
+                  href="https://portfoliobackend-production-8d9f.up.railway.app/view-resume" // Will be updated to Railway URL after deployment
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-8 py-3 border border-blue-600 text-blue-400 font-semibold rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors"
+                >
+                  <FileText className="w-6 h-6" />
+                  View Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
