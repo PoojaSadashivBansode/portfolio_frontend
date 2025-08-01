@@ -437,7 +437,7 @@ const ContactForm = () => {
     setStatus('loading');
 
     try {
-      const response = await fetch('http://localhost:8080/send-email', {
+      const response = await fetch('https://portfoliobackend-production-8d9f.up.railway.app/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
