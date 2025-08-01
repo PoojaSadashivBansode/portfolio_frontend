@@ -141,19 +141,13 @@ function App() {
       </section>
 
       {/* Projects Section */}
+      {/* Projects Section */}
       <section id="projects" className="py-20 bg-white p-4"> 
         <div className="container mx-auto px-8 max-w-7xl"> {/* Increased max-width to 7xl */}
           <br></br>
           <h2 className="text-5xl font-bold text-center text-indigo-700 mb-16 border-b-4 border-indigo-500 pb-3 inline-block rounded-md">Projects</h2> {/* Increased font size, padding, margin */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"> {/* Increased gap */}
-            <ProjectCard
-              title="Anime Recommendation System"
-              description="Built a recommendation system using collaborative and content-based filtering for personalized anime suggestions."
-              technologies={['Python', 'Machine Learning', 'Scikit-learn']}
-              githubLink="https://github.com/PoojaSadashivBansode/Recommendation_System"
-              liveLink=""
-            />
-
+        
             <ProjectCard
               title="Sentiment Analysis of Restaurant Reviews"
               description="Performed sentiment analysis using Natural Language Processing (NLP) techniques to classify restaurant reviews as positive or negative. Used text preprocessing, feature extraction, and trained models using Scikit-learn."
@@ -162,6 +156,13 @@ function App() {
               liveLink=""
             />
 
+            <ProjectCard
+              title="Hospital Management System"
+              description="Developed a full-stack Java project with MySQL database integration to manage hospital operations."
+              technologies={['Java', 'MySQL']}
+              githubLink="https://github.com/PoojaSadashivBansode/Hospital_management_system"
+              liveLink=""
+            />
 
             <ProjectCard
               title="E-Commerce Sales Analysis"
@@ -171,13 +172,6 @@ function App() {
               liveLink=""
             />
         
-            <ProjectCard
-              title="Hospital Management System"
-              description="Developed a full-stack Java project with MySQL database integration to manage hospital operations."
-              technologies={['Java', 'MySQL']}
-              githubLink="https://github.com/PoojaSadashivBansode/Hospital_management_system"
-              liveLink=""
-            />
             <ProjectCard
               title="VPKBIET Location Guide Website"
               description="Created a college guide website showing buildings, departments, and navigation with interactive campus blueprints."
@@ -192,10 +186,18 @@ function App() {
               githubLink="https://github.com/PoojaSadashivBansode/Restaurant_management"
               liveLink="https://poojasadashivbansode.github.io/Restaurant_management/"
             />
+
+            <ProjectCard
+              title="Event Management App"
+              description="Developed a responsive event management web app using React and Vite, allowing users to create, register, and manage events efficiently."
+              technologies={['React', 'Vite', 'JavaScript', 'CSS']}
+              githubLink="https://github.com/PoojaSadashivBansode/event_management_system"
+              liveLink="https://roaring-madeleine-c842bd.netlify.app/"
+            />
           </div>
         </div>
       </section>
-
+      
       {/* Certificates Section */}
       <section id="certificates" className="py-20 bg-gray-100 p-4">
         <div className="container mx-auto px-8 max-w-6xl">
