@@ -76,7 +76,8 @@ function App() {
                   Contact Me
                 </a>
                 <a
-                  href="https://portfoliobackend-production-8d9f.up.railway.app/view-resume"
+                  //href="https://portfoliobackend-production-8d9f.up.railway.app/view-resume"
+                  href="/Pooja_Bansode_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-8 py-3 border border-indigo-600 text-indigo-600 font-semibold rounded-full shadow-lg hover:bg-indigo-600 hover:text-white transition-colors"
